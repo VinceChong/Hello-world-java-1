@@ -44,10 +44,6 @@ pipeline {
     }
 
     post {
-        always {
-            echo 'Cleaning up workspace'
-            deleteDir()
-        }
         success {
             echo 'Build succeeded!!!'
         }
@@ -56,3 +52,10 @@ pipeline {
         }
     }
 }
+
+        /*
+            always {
+                echo 'Cleaning up workspace'
+                deleteDir()
+            }
+        */
